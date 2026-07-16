@@ -1,4 +1,4 @@
-# 🧊 HVAC Engineering Copilot — Streamlit Cloud Edition
+# INDIRECT EVAPORATIVE COOLING AND DIGITAL TWINS FOR BUILDING EFFICIENCY 
 
 **A browser-based research prototype for a university-funded Digital Twin
 project on district cooling and building energy optimisation.**
