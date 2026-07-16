@@ -31,8 +31,7 @@ The AI report layer now works like this:
 | **Hugging Face Inference Providers** *(optional)* | ✅ Yes (free tier) | HF's cloud router, serving open-weight models |
 | **Custom OpenAI-compatible API** *(optional)* | ✅ Yes | Any endpoint you point it at (OpenRouter, Together AI, self-hosted, etc.) |
 
-**The app is fully functional the moment you deploy it — with zero secrets
-configured.** The Rule-Based Engine produces a genuine, statistics-grounded
+**The app is fully functional when deployed.** The Rule-Based Engine produces a genuine, statistics-grounded
 engineering report (health verdict, causes, recommendations, maintenance
 actions, sensor suggestions, confidence level) using deterministic logic
 built on top of the same analytics pipeline — no external model call at all.
@@ -119,21 +118,6 @@ Get a free key at <https://console.groq.com/keys>. Current model list:
 <https://console.groq.com/docs/models> (the app defaults to
 `llama-3.1-8b-instant`; you can override the model name in the app's sidebar
 if Groq renames or retires a model).
-
-**Option B — Hugging Face Inference Providers** (free tier):
-```toml
-HF_TOKEN = "hf_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-```
-Get a free token at <https://huggingface.co/settings/tokens> (enable the
-"Make calls to Inference Providers" permission on the token).
-
-**Option C — Any OpenAI-compatible API** (OpenRouter, Together AI, your own
-hosted endpoint, etc.):
-```toml
-CUSTOM_API_BASE_URL = "https://openrouter.ai/api/v1/chat/completions"
-CUSTOM_API_KEY = "sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-CUSTOM_MODEL = "meta-llama/llama-3.1-8b-instruct"
-```
 
 3. Reload the app, open the sidebar, and switch **"Report generation
    engine"** to your chosen provider. The sidebar will show a green
