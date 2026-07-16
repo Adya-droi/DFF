@@ -1,6 +1,6 @@
 # INDIRECT EVAPORATIVE COOLING AND DIGITAL TWINS FOR BUILDING EFFICIENCY 
 
-**A browser-based research prototype for a university-funded Digital Twin
+**A browser-based research prototype for Digital Twin
 project on district cooling and building energy optimisation.**
 
 This tool ingests building operational data (indoor temperature, humidity,
@@ -12,9 +12,7 @@ maintenance actions, suggested additional sensors, and a confidence level.
 
 > **Status:** Early-stage research prototype, designed to demonstrate the
 > feasibility of an AI-assisted diagnostic layer that could later be
-> integrated into a full Digital Twin platform. Not a certified engineering
-> or safety tool — outputs should always be reviewed by a qualified engineer
-> before any operational action is taken.
+> integrated into a full Digital Twin platform.
 
 ---
 
