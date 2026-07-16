@@ -94,60 +94,11 @@ git push -u origin main
    - **Main file path:** `app.py`
 4. Click **"Deploy"**.
 
-That's it — Streamlit Cloud will install everything in `requirements.txt`
+Streamlit Cloud will install everything in `requirements.txt`
 and launch the app. The **Rule-Based Engine** works immediately with no
-further configuration. Give the build 1–3 minutes on first deploy.
-
-### Step 3 — (Optional) Enable a cloud LLM provider
-
-If you'd like AI-narrative reports written by an actual LLM instead of the
-rule-based engine:
-
-1. On your app's page in Streamlit Cloud, click **⋮ (menu) → Settings → Secrets**.
-2. Paste in **one** of the blocks below (see `.streamlit/secrets.toml.example`
-   for the full annotated version), then click **Save**. The app will
-   automatically restart with the new secrets available.
-
-**Option A — Groq Cloud** (fast, generous free tier):
-```toml
-GROQ_API_KEY = "gsk_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-```
-Get a free key at <https://console.groq.com/keys>. Current model list:
-<https://console.groq.com/docs/models> (the app defaults to
-`llama-3.1-8b-instant`; you can override the model name in the app's sidebar
-if Groq renames or retires a model).
-
-3. Reload the app, open the sidebar, and switch **"Report generation
-   engine"** to your chosen provider. The sidebar will show a green
-   confirmation once the secret is detected.
-
-You can configure more than one provider at once and switch between them
-live from the sidebar dropdown — useful for comparing rule-based vs.
-LLM-generated narrative style during a research demo.
+further configuration. The build takes 1–3 minutes on first deploy.
 
 ---
-
-## Running locally (optional)
-
-You don't need Ollama or any local LLM server for this edition. To run it
-on your own machine before deploying:
-
-```bash
-cd hvac_copilot
-python -m venv venv
-
-# Windows:
-venv\Scripts\activate
-# macOS/Linux:
-source venv/bin/activate
-
-pip install -r requirements.txt
-streamlit run app.py
-```
-
-To use a cloud LLM provider locally, copy `.streamlit/secrets.toml.example`
-to `.streamlit/secrets.toml` and fill in real values — Streamlit will pick
-it up automatically.
 
 ---
 
