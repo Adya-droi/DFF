@@ -1,7 +1,7 @@
 """
 app.py
 ======
-HVAC Engineering Copilot — Streamlit front-end.
+INDIRECT EVAPORATIVE COOLING AND DIGITAL TWINS FOR BUILDING EFFICIENCY — Streamlit front-end.
 
 A research prototype developed for a university Digital Twin project on
 district cooling and building energy optimisation. This app ties together:
@@ -35,7 +35,7 @@ import report_generator as rg
 # ---------------------------------------------------------------------------
 
 st.set_page_config(
-    page_title="INDIRECT EVAPORATIVE COOLING AND DIGITAL TWINS FOR BUILDING EFFICIENCY | Digital Twin Research",
+    page_title="🏢 Smart Building Digital Twin Copilot | Digital Twin Research",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -84,9 +84,9 @@ st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
 st.markdown(
     """
     <div class="main-header">
-        <h1>🧊 HVAC Engineering Copilot</h1>
+        <h1>🏢 Smart Building Digital Twin Copilot</h1>
         <p>AI-assisted building operations analysis for district cooling &amp; energy optimisation</p>
-        <span class="badge-research">DIGITAL TWIN RESEARCH LAB — PROTOTYPE v0.1</span>
+        <span class="badge-research">DIGITAL TWIN — PROTOTYPE v0.1</span>
     </div>
     """,
     unsafe_allow_html=True,
