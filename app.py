@@ -35,8 +35,7 @@ import report_generator as rg
 # ---------------------------------------------------------------------------
 
 st.set_page_config(
-    page_title="HVAC Engineering Copilot | Digital Twin Research Lab",
-    page_icon="🧊",
+    page_title="INDIRECT EVAPORATIVE COOLING AND DIGITAL TWINS FOR BUILDING EFFICIENCY | Digital Twin Research",
     layout="wide",
     initial_sidebar_state="expanded",
 )
